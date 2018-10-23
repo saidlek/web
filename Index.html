@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introduction à CSS</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet"  href="Ressources/Style/style1.css">
+	<style type="text/css">
+		a, h1{
+			color:pink;
+		}
+		p{color:black;
+			background-clip: : }
+
+	</style>
+</head>
+<body>
+
+<h1> Chapitre 2 CSS3</h1>
+<div>
+<h2>I. Introduction à CSS :</h2>
+<h3>1. Présentation du langage CSS : </h3>
+<p> Bonjour TDI 201  <abbr title="Cascad Style Sheet">Le C.S.S</abbr> est un langage de style qui permet au developpeur front end c a d partie web coté client de donnée plus de style et design à ses pages web de manière cohérente. Pour inserer le Code CSS dans une page Web Il Existe 3 Manière de Faire (<a href='#'>Page Cible</a>): 
+<ul>
+	<li> Le code dans une balise avec l'attribut style='...'</li>
+	<li> Le code Dans le Head avec la balise &lt;style&gt;....&lt;/style&gt;</li>
+	<li>Dans un fichier externe .css et on l'insère en utilsant la balise &lt;link&gt;</li>
+</ul>
+</p> 
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<h3>2. Structure du langage CSS : </h3>
+
+<p> pour ecrire du code en CSS on suit la structure suivante : </p>
+selecteur {
+	propriété1 : valeur1;
+	propriété2 : valeur2;
+	propriété3 : valeur3;
+	...
+}
+<p> Le Selecteur est un code qui fixe les balises sur lesquelles on doit appliquer le style. La propriétés sont les element de style à manipuler par des valeurs exemple :
+</p>
+h1, a{
+	color : pink;
+}
+<p style="color:blue"> dans cet exemple le selecteur : h1, a veut dire tt les h1 et les a de la page web. ensuite on trouve que la propriété color qui a comme valeur pink pour ce style voir le paragraphe suivant pour le style inserer dans la balise elle meme puis au niveau du head</p>
+
+<p> Teste du style sur la balise q : 
+<q style='color  : green;'>L'Homme est un loup pour l'Homme</q>
+<q>Nous Vivons dans un Monde Barbare ni calme ni sauvage et il n'y pas plus dificile que les demis Mesures</q></p>
+Pour plus d'info Visiter <a href='#'>L7AJ Google</a>
+<p style='direction: rtl;'>Pour l'ordre d'application du style il se fait dans l'ordre de priorité suivante  : Le code dans l'attribut, la balise style(important tj avoir la balise style aprés link) puis (le dernier link)
+</p>
+<p> pour faire un commentaire en css on utilise comme le langage c /*
+...
+...
+*/
+</div>
+<div>
+<h2>II. Les Proriétés </h2>
+<h3>1. Formatage de Texte : </h3>
+<ul>
+	<li>color:value;/*la valeur de la couleur anglais pink | code ASCII #FF01AA |rgb(12,14,100)*/</li> 
+	<li>direction : rlt or ltr as default value;</li>
+	<li>letter-spacing:5px;</li> 
+	<li>word-spacing:-2px;</li> 
+	<li>line-height : 15px or 200% or 2em;//normal</li>
+	<li>text-align : left or right or center; </li>
+	<li>text-decoration:none orunderline or overline or line-through</li>
+	<li>aligna; : text-indent:40px or 20%;</li> 
+	Programmation Orientée Objets Bonjour
+	programmation orientée objets BONJOUR
+	<li>text-transform:capitalize - uppercase - lowercase ;//default none</li>			
+	<li>	font-family:arial ,'time new roman', serif, tahima;</li>
+	<li>font-style:normal, italic, oblique</li>
+	<li>font-size:25px par défaut 16px or 150% donc 24px or 2em  or small large x-small xx-large smaller</li>
+	<li>font-weight: normal, bold, bolder, lighter or 100 ... 900 avec 400 normal 32 700 bold...;</li>				
+</ul>
+<H3>2. Les Listes :</H3> 
+<ul>
+		<li>list-style-type:disc default or circle or square or hebrew or decimal or hiragana or none...</li>
+		<li>list-style-position:outside default or inside</li> 
+		<li>list-style-image:url(...)</li>
+		<li>list-style: type position url;</li>
+		</ul>
+<p>
+	<span>ab</span>=<span>a</span>b+a<span>b</span></p>
+<h3>3. Les Arrières Plans : </h3>
+2. L'arrière plan et image de fond : 
+		div{
+		background-color: rgb(147,38,38) or rgba(147,38,38,opacité exemple 0.6); default value transparente 		
+		background-image : url(path/imageName.extension);
+		background-repeate : repeat qui est default value sur les deux sens or repeat-x or repeat-y no-repeat;
+		
+		background-attachement: scroll or fixed 
+		background-position : top right or center center ... or 15% 60%;
+		
+		background: url or none puis repeat puis attachement puis position enfin color
+		
+		background-position: right bottom, left top;
+		background-repeat: no-repeat;
+		
+		opacity:0.75;
+		  }
+</div>
+<h3> 4. Le Model Box (Boite)</h3>
+<h4> 4.1 Margin, width et heigth : </h4>
+<p> cette propriété permet de définir un espace externe parapport aux elements qui entourent la balise : </p>
+<div style='background-color: #F00; padding: 10px; margin:5px;'>
+	<h1 style="background-color: #DDD; color:blue; width: 200px; height: 50px"> Div1</h1>
+</div>
+<div style='background-color: #F00; padding: 10px;'>
+	<h1 style='min-width: 400px; max-width: 600px; background-color: #DDD; display: inline;'>Div2</h1> Bonjour
+</div>
+<div style='background-color: #F00; padding: 10px; margin-top: 10px;'>
+	Div3
+</div>
+<div style='margin:5px  10px;' >
+	Div4
+
+	<!-- top R b L-->
+	<!-- top&B l&R-->
+</div>
+<h4>4.2- Les Bordures : </h4>
+<p style="border-width: 2px;border-style: dotted; border-color: blue;"> Bordure est un contour sur une balise on doit notifié la taille de la bordure border-width, le style de la bordure  broder-style et la couleur de la bordure border-color.</p>
+<p style="border: 5px solid blue;  border-radius:20px; ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<img src="Ressources/Multimédias/Images/EnzoBis.jpg"> Salut
+<form>
+<fieldset>
+<legend>Inscription</legend>
+	<label>Nom : </label><input type="text">
+	<label>Prénom : </label><input type="text">
+	<label>Email : </label><input type="text">
+	<label>Password : </label><input type="Password">
+	<input type="button" value="Connexion"><input type="Reset" value="Effacer">
+</fieldset>
+<hr>
+<h2>III. Les Selecteurs :</h2>
+<h3>	1. Selecteurs Simples :</h3>
+	<p>
+		<ul>
+			<li>Liste d'elements : p,h1, a{color:red; font-size:30px;} veut dire appliqué sur p et h1 et a(, c a d et )</li> 
+			<li>Les Eléments Imbriqués : li a{ color:green;} Les hyperliens qui sont à l'interieure de li</li>
+			<li>Deux balises successives séparées d’un signe + permettent d’appliquer le style seulement si la Balise2  et un frere dirrecte de la balise 1</li> 
+			<li>Le Selecteur Globale (*) : Div * p  -tt les paragraphes fils de n'importe quel element fils de div-</li>
+			<li>Sélecteurs direct child : seleument le fils directe non pas les petit fils  ...
+				body > p {line-height: 1.3}
+				div ol > li p : Il correspond à un élément de P qui est un descendant d'un li; l'élément li doit être l'enfant d'un élément ol; l'élément ol doit être un descendant d'un DIV. </li>
+		</ul>
+		Voire la page <a href='Pages/selecteurs.html' target="_blank">ici</a>
+	</p>
+	<h3>2. les classes </h3>
+	<p>+ Classes :
+			p.vert{	
+				font : verdana 14px ;
+				color : #336600 ; }
+			.rouge{color:red;} 
+			p .orange{color:...}
+			la classe rouge s'applique à tt element ayant l'attribut class="rouge"
+			pour la classe vert elle est utilisable que sur des balises p.
+			p .orange sur tte les balises portant class='orange' etant fils de p
+
+		+ #jaune{color:yellow;} il s'applique qu'a un seul element portant la valeur de l'id="jaune"
+</p>
+<h3>3. Les Attributs</h3>
+<p>	
+		+ contenant un attribut : a[title] {color: green; }
+		+ Contenant un attribut avec une valeur connu : a[href="http://google.com"]
+		+ contenant un attribut qui contient dans sa valeur la chainse qui suit like %vlaue% : X[href*="nettuts"] :
+		+ Attribut commance par : X[href^="http"] : like 'http'%
+		+ valeur d'attribut setermine par : X[href$=".jpg"] : like %'http'
+		
+</p>
+</form>
+
+
+<HR/>
+
+<pre>IV. Création d'apparences dynamiques :<a href='Pages/TPDyn.html'>Voir TP</a>
+		
+	1. Position :
+		position prend trois values :
+			o	absolite : cette position prend son origine comme le peremier élément parent ayant la valeur position : relative. (puis j'utilise top et left pour positionner mon element) 
+			o	Positionnement relative : etre prit comme l'origine de positionnement des fils
+			o	Positionnement fixed : 
+				div{background:green; position : fixed; top:15px; right : 150px;} meme si je scroll le contenu reste fixe sur la partie apparente
+	2. float :
+		par défaut la valeur est none.
+		div{background:red;
+			width:..;
+			height:..;
+			display : inline;
+			float:left /*aligne sur une ligne son avantage on peut avec des classe diff et value floatdiff d'avoir les allignement diff sur la meme ligne diff a align*/}
+			
+			je pourais faire un float:left sur le div et float:right sur div span (le span dans le div)
+			
+			aprés le code de float sur une ligne si on veut arreter le float sur les autre ligne on leur code 
+				clear:both; both c a d les deux sens si non left et right
+	3. overFlow :			
+		Le contenu d'un div pourait déppaser la taille du div on utilise alors overfow :
+			overflow : dfault visible or hindden or scroll or auto dépend(le scroll dans le cas de besoin)
+	4. Content : 
+		div:after{
+				content : 'Hello World';	
+		} 
+		N.B : before et after s'applique sur le contenu à l'interieure de la balise qui les appèle
+
+	
+V. Transformation :
+	1. Transform:
+a. rotate():
+		div :hover{
+			Transform:rotate(-30deg); // sur le plan comme un rotateZ()
+			rotateX() ou rotateY
+		}
+b. scale() :
+		+ scale(xwidth, xheight); mutliplier le width de x  fois de meme pour height 
+		+ exemple (0.5, 2) on divise width/2 et on multiplie height*2 aussi (2,2) on ecrit aussi (2)
+		+ on a aussi scalex() et scaley() 
+		+ la valeur par défaut de transform:none pour annuler tte transforamtion
+c. Translate(x,y);
+		+ leftTORight et topTObottom
+		+ translatex() et translatey()
+		+ transform:rotate(30deg) translateX(20px) scaleY(0.5);
+		+ translate3d(x,y,z); pour le translate3d fonctionne on doit ajouter une perspective à l'élement (perspective:600px;)
+		+ si non translateZ();
+d. skew() transformation 2D :
+		+ transform:skew(10deg, 10deg) ; change les angles du box dans le sens x et y en losange skew(10deg) comme skew(10deg,0deg)
+		+ skewX() et skewY()
+
+	2. Transition :
+
+		+ transition : <property oblig> <duration oblig>	<timing function>	<delay of transition>
+			div{
+			....
+			width:100px;
+			transition: width 0.5s
+			}
+			div:hover{
+			width:200px;
+			}
+		+ si je veux appliquer la transition sur plusieurs property :
+			prop = all ou bien width 1.5s, height .5s
+			
+		+ Isolation des propriétés et la durée de transition :
+			transition-property : width , background-color; //default value all pour le reset on utilise none
+			transition-duration: 0.5s, 2s; //par défaut 0s
+		+ timing funtion
+			transition-timing-function : default value ease;
+				- ease : commence et se termine gradualement
+				- linear : commence vite mais va avec la meme vitesse
+				- Ease-In : commence gradualement et setermine vite
+				- Ease-Out : contraire in
+				- Ease-In-Out :
+				- steps(nbredepasHchée,start or end)
+		+ delay : 5s; // temps d'avant demarage  de la transition
+				
+				
+	3. Animations 2D et 3D
+a. syntaxe :		
+		@keyframes coloring{
+			from{
+				background-color:#F08;
+			}
+			to{
+				background-color:#888;
+			}
+		}
+		
+		@keyframes moving{
+			0%,100%{
+				top:0;
+				left:0;
+			}
+			25%{
+				top:0;
+				left:200px;
+			}
+			50%{
+				top:200px;
+				left:200px;
+			}
+			75%{
+				top:200px;
+				left:0;
+			}
+
+		}
+		
+		div{
+		....
+		position:absolute;
+		animation:coloring 3s	5(nbre repetition) linear;
+		animation : 
+		}
+b. name et duration :		
+	animation-name:defaul none or th keyframes;
+	animation-duration :200ms
+c. iteration count et animation direction :
+	+ animation-iteration-count : default 1; other values 5, infinite
+	+ animation-direction : normal default; reverse commence depuis la fin or alternate start end puis end start ...
+d. delay et fill mode :
+	+ animation-delay:5s;
+	+ animation-fill-mode : none bydefault ; firwards-sarrete sur l'etat de 100% a lafin contrairement a none qui revient a letat initial -
+							backwards prend la valeur du first key avant de commancer le mouvement
+e. play stat et timing function :
+	+ animation-play-state : runing; paused
+	+ animation-timing-function:ease or linea.. ...
+
+		
+				<link rel='shortcut icon' heref="---.ico" type="image/x-icon"/>
+				<link rel='icon' heref="----.png" type="image/png"/>
+</pre>
+
+</body>
+</html>

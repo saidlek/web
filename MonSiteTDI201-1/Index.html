@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introduction à CSS</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet"  href="Ressources/Style/style1.css">
+	<style type="text/css">
+		a, h1{
+			color:pink;
+		}
+		p{color:black;}
+
+	</style>
+</head>
+<body>
+
+<h1> Chapitre 2 CSS3</h1>
+<div>
+<h2>I. Introduction à CSS :</h2>
+<h3>1. Présentation du langage CSS : </h3>
+<p> Bonjour TDI 201  <abbr title="Cascad Style Sheet">Le C.S.S</abbr> est un langage de style qui permet au developpeur front end c a d partie web coté client de donnée plus de style et design à ses pages web de manière cohérente. Pour inserer le Code CSS dans une page Web Il Existe 3 Manière de Faire (<a href='#'>Page Cible</a>): 
+<ul>
+	<li> Le code dans une balise avec l'attribut style='...'</li>
+	<li> Le code Dans le Head avec la balise &lt;style&gt;....&lt;/style&gt;</li>
+	<li>Dans un fichier externe .css et on l'insère en utilsant la balise &lt;link&gt;</li>
+</ul>
+</p> 
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<h3>2. Structure du langage CSS : </h3>
+
+<p> pour ecrire du code en CSS on suit la structure suivante : </p>
+selecteur {
+	propriété1 : valeur1;
+	propriété2 : valeur2;
+	propriété3 : valeur3;
+	...
+}
+<p> Le Selecteur est un code qui fixe les balises sur lesquelles on doit appliquer le style. La propriétés sont les element de style à manipuler par des valeurs exemple :
+</p>
+h1, a{
+	color : pink;
+}
+<p style="color:blue"> dans cet exemple le selecteur : h1, a veut dire tt les h1 et les a de la page web. ensuite on trouve que la propriété color qui a comme valeur pink pour ce style voir le paragraphe suivant pour le style inserer dans la balise elle meme puis au niveau du head</p>
+
+<p> Teste du style sur la balise q : 
+<q style='color  : green;'>L'Homme est un loup pour l'Homme</q>
+<q>Nous Vivons dans un Monde Barbare ni calme ni sauvage et il n'y pas plus dificile que les demis Mesures</q></p>
+Pour plus d'info Visiter <a href='#'>L7AJ Google</a>
+<p style='direction: rtl;'>Pour l'ordre d'application du style il se fait dans l'ordre de priorité suivante  : Le code dans l'attribut, la balise style(important tj avoir la balise style aprés link) puis (le dernier link)
+</p>
+<p> pour faire un commentaire en css on utilise comme le langage c /*
+...
+...
+*/
+</div>
+<div>
+<h2>II. Les Proriétés </h2>
+<h3>1. Formatage de Texte : </h3>
+<ul>
+	<li>color:value;/*la valeur de la couleur anglais pink | code ASCII #FF01AA |rgb(12,14,100)*/</li> 
+	<li>direction : rlt or ltr as default value;</li>
+	<li>letter-spacing:5px;</li> 
+	<li>word-spacing:-2px;</li> 
+	<li>line-height : 15px or 200% or 2em;//normal</li>
+	<li>text-align : left or right or center; </li>
+	<li>text-decoration:none orunderline or overline or line-through</li>
+	<li>aligna; : text-indent:40px or 20%;</li> 
+	Programmation Orientée Objets Bonjour
+	programmation orientée objets BONJOUR
+	<li>text-transform:capitalize - uppercase - lowercase ;//default none</li>			
+	<li>	font-family:arial ,'time new roman', serif, tahima;</li>
+	<li>font-style:normal, italic, oblique</li>
+	<li>font-size:25px par défaut 16px or 150% donc 24px or 2em  or small large x-small xx-large smaller</li>
+	<li>font-weight: normal, bold, bolder, lighter or 100 ... 900 avec 400 normal 32 700 bold...;</li>				
+</ul>
+Les Listes : 
+<ul>
+		<li>list-style-type:disc default or circle or square or hebrew or decimal or hiragana or none...</li>
+		<li>list-style-position:outside default or inside</li> 
+		<li>list-style-image:url(...)</li>
+		<li>list-style: type position url;</li>
+		</ul>
+<p>
+	<span>ab</span>=<span>a</span>b+a<span>b</span></p>
+<h3>2. Les Arrières Plans : </h3>
+2. L'arrière plan et image de fond : 
+		div{
+		background-color: rgb(147,38,38) or rgba(147,38,38,opacité exemple 0.6); default value transparente 		
+		background-image : url(path/imageName.extension);
+		background-repeate : repeat qui est default value sur les deux sens or repeat-x or repeat-y no-repeat;
+		
+		background-attachement: scroll or fixed 
+		background-position : top right or center center ... or 15% 60%;
+		
+		background: url or none puis repeat puis attachement puis position enfin color
+		
+		background-position: right bottom, left top;
+		background-repeat: no-repeat;
+		
+		opacity:0.75;
+		  }
+</div>
+</body>
+</html>

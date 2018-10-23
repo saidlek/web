@@ -1,0 +1,104 @@
+h3{
+	/*Ceci est un Commentaire
+	 en CSS
+	*/
+	color:red;
+	word-spacing: 10px;
+}
+p{color:yellow;
+line-height: 140%;}
+h2 {
+	color:rgba(12,80,100,1); /*rgb(12,80,100,1); et #DDF156*/ 
+	letter-spacing: 5px;
+}
+h1{text-align: center;}
+span{text-decoration: overline; }
+p{text-indent: 40px;}
+
+/*l'arrière plan*/
+div{
+/*	background-image: url(../Multimédias/Images/Enzo.jpg);
+background-repeat: repeat-y;	*/
+}
+body{
+	background-image: url(../Multimédias/Images/img2.png);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position : 400px 300px; 
+background-color: rgba(34,80,200,0.6);
+opacity:0.95;
+}
+ul{box-shadow: 10px -10px 5px 8px red inset, -10px 10px 5px 8px green inset;  	
+	list-style-type: hebrew; 
+	list-style-position:inside;
+}
+
+
+img{
+	width: 500px;
+	height: 500px;
+	border-radius: 50% 20% 10% 25%;
+	box-shadow: 5px 5px 5px #DDD;
+	display: block;
+}
+
+h4{
+	text-shadow: 27px 10px 3px yellow;
+}
+input[type='text'],input[type='password']{
+	display: block;
+	width: 239px;
+    height: 25px;
+    background-color: #e0c5ca;
+}
+input[type='password']{
+	color:red;
+	width:100px;
+	visibility: hidden;
+}
+input{
+	margin: 10px;
+}
+
+/*
+	e. display :
+	display : 
+		inline : les balise span, a, img, abbr, i ,input: ou peut avoir plusieur balise inline dans la meme ligne
+		L1<a>L2</a>L3 ---> L1L2L3 
+		or block : div, h1, ul, p tte balise block occupe la ligne entière
+		L1<h1>L2</h1>L3----->L1
+							 L2
+							 L3 
+		; or inline-block c a d inline mais peut contenir du block  or none
+	display : none l'element n'est plus afficher et meme sa position sera perdu contrairment à visibility
+	visibility : visible(default) or hidden(cacher sans l'eleminer de la position)
+	
+	4. Les bordures et les ombres 
+a. Bordures standard : 
+	boredr-width : 1px ;
+	border-style : solid or doted dashed double grouve ridge inside outside hidden none;
+	border-color: red;
+	
+	border : 
+	border-top :
+	border-right:
+	border-bottom :
+	
+	boredr-width : 1px 2px ; top right bottom left
+	
+	
+b. Bordures arrondies :
+		div{border-radius:20px ou %; aussi top right bottom left }
+		border-top-right-raduis:20%;
+	
+c. Les ombres :
+		+ box-shadow : les ombres des boîtes 
+			box-shadow:none defaultValue; 
+			
+			box-shadow : horizontal px obli		vertical px obli		blur opt 					spread opt la distribution	color optionnel defaultblack	outset default prend aussi inset
+							+ -					+ -						concentration de l'ombre
+			box-shadow: 10px -10px 5px 8px red inset or outsetn, les données d'une autre ombre , .... si on veut
+		
+		+ text-shadow : l'ombre du texte 
+
+*/
